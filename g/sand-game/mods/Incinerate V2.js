@@ -18,7 +18,7 @@ elements.pure_cold = {
 elements.super_wall = {
 		color: "#828282", 
 		behavior: behaviors.WALL,
-		tempHigh: 18446744073709551615184467440737095516151844674407370955161518446744073709551615,
+		tempHigh: 9807234599,
 		category: "solids",
 		state: "solid",
 		density: 1202308975439875493857439584395843,

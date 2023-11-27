@@ -27,7 +27,7 @@
     </div>
   <div id="extras-menu-settings" style="width:0px;transition:0.4s;">
     <div id="extras-menu">
-      <p style="color:white;">under uhh work things(dont you dare ever use light mode, the thing im adding)</p> 
+      <p style="color:white;">enable lightmode: </p> 
         <label class="switch">
           <input type="checkbox" id="toggle-switch">
           <span class="slider"></span>
@@ -71,8 +71,8 @@
         const messageInput = document.getElementById('message-input');
         const sendButton = document.getElementById('send-button');
         const sidebar = document.getElementById("extras-sidebar");
-        const socket = new WebSocket('wss://dollardsatdollarfar.12bits20.repl.co')
-        const banned_names = ["feeshmaster", "Feeshmaster", "Victor_M", "mnazenac"];
+        const socket = new WebSocket('wss://test-1.12bits20.repl.co')
+        const banned_names = ["feeshmaster", "Feeshmaster", "Victor_M", "mnazenac", "Survivir"];
         let isSpecial = false;
         let DmName = 'main';
 
@@ -254,11 +254,24 @@ function sendDm(sender, message, isSpecial, DM) {
             const messageElement = document.createElement('div');
             messageElement.className = isSpecial ? 'message special-message' : 'message';
             const localTimestamp = new Date(timestamp).toLocaleString();
-            messageElement.innerHTML = `
+            /*messageElement.innerHTML = `
                 <div class="message-sender">${sender}</div>
                 <div class="message-text">${message}</div>
                 <div class="message-timestamp">${localTimestamp}</div>
-            `;
+            `;*/
+            const message_sender = document.createElement('div');
+            const message_text = document.createElement('div');
+            const message_timestamp = 
+              document.createElement('div');
+            message_sender.textContent = sender;
+            message_text.textContent = message;
+            message_timestamp.textContent = localTimestamp;
+            message_sender.className = "message-sender";
+            message_sender.className = "message-text";
+            message_sender.className = "message-timestamp";
+          messageElement.appendChild(message_sender);
+          messageElement.appendChild(message_text);
+          messageElement.appendChild(message_timestamp);
             chatMessages.appendChild(messageElement);
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
@@ -407,29 +420,33 @@ function openMenu(menuId) {
 
 
       const lightSwitch = document.getElementById('toggle-switch');
-
-      
       const isLightMode = localStorage.getItem('LightMode') === 'true';
+      const elementsToToggle = document.querySelectorAll('#chat-container, #chat-header, #chat-messages, #chat-input, #message-input, #send-button, .message, .message-sender, .dm-button, #add-button, #main, #deleteDm, body');
 
-      
       lightSwitch.checked = isLightMode;
 
-      
       lightSwitch.addEventListener('change', () => {
-          
           if (lightSwitch.checked) {
-              
+              elementsToToggle.forEach(element => {
+                  element.classList.add("light-mode");
+              });
               localStorage.setItem('LightMode', 'true');
           } else {
-              
+              elementsToToggle.forEach(element => {
+                  element.classList.remove("light-mode");
+              });
               localStorage.removeItem('LightMode');
           }
       });
 
-      
       if (isLightMode) {
-          
+          elementsToToggle.forEach(element => {
+              element.classList.add("light-mode");
+          });
       }
+
+
+
 
 
 

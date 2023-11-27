@@ -176,7 +176,6 @@ body {
 }
 
 
-
 .switch {
     position: relative;
     display: inline-block;
@@ -223,12 +222,76 @@ input:checked + .slider:before {
 }
 
 
+/* Add this new class for light mode */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
 
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
 
+#chat-container.light-mode {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
+#chat-header.light-mode {
+    background-color: #949494;
+    color: #000000;
+}
 
+#chat-messages.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
 
+#chat-input.light-mode {
+    background-color: #949494;
+    
+    
+}
 
+#message-input.light-mode {
+    background-color: #b3b3b3;
+    color: #000000;
+}
+
+#send-button.light-mode {
+    background-color: #37a354;
+    color: #ffffff;
+}
+
+.message.light-mode {
+    background-color: #37a354;
+    color: #ffffff;
+}
+
+.message-sender.light-mode {
+    color: #ffffff;
+}
+
+.dm-button.light-mode {
+    background-color: #37a354;
+    color: #ffffff;
+}
+
+#add-button.light-mode {
+    background-color: #37a354;
+    color: #ffffff;
+}
+
+#main.light-mode {
+    background-color: #37a354;
+    color: #ffffff;
+}
+
+#deleteDm.light-mode {
+    background-color: #37a354;
+    color: #ffffff;
+}
 
 
 

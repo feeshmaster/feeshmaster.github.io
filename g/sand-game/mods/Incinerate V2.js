@@ -35,4 +35,27 @@ elements.super_ruins = {
 		conduct: 0,
 		hardness: 18446744073709551615184467440737095516151844674407370955161518446744073709551615,
 	
-	}
+	};
+elements.fire_douser = {
+    color: ["#d9d9d9", "#d5d5d5"],
+    behavior: behaviors.LIQUID,
+    tempHigh: 6000,
+    stateHigh: "nitrogen",
+    temp: -167,
+    tempLow: -200,
+    stateLow: "liquid_nitrogen",
+    category: "liquids",
+    reactions: {
+        "fire": { 
+            elem1: "fire_douser", 
+            elem2: "nitrogen", 
+        },
+        "plasma": { elem1: "fire_douser", elem2: "nitrogen" },
+        "fallout": { elem1: null, elem2: "nitrogen" },
+        "radiation": { elem1: "fire_douser", elem2: "nitrogen" }
+    },
+    state: "liquid",
+    density: 9997,
+    conduct: 0.02,
+    stain: -5.43
+}

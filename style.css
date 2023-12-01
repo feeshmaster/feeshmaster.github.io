@@ -1,3 +1,6 @@
+body {
+    font-family: sans-serif;
+}
 
 body, ul, li {
     margin: 0;
@@ -53,12 +56,11 @@ body, ul, li {
   border-radius: 25%;
   height:150px;
   width:150px;
+    transition: 0.5s;
 }
 
 .button-img:hover {
   border-radius: 15%;
-  transition-property: border-radius;
-  transition-duration: 0.5s;
 }
 .scrolling-content::before {
     content: "";

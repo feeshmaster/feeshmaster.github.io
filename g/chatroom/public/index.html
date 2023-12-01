@@ -99,7 +99,7 @@
             const username = usernameInput.value;
 
 
-            socket.send(JSON.stringify({ request: 'get_chat_history' , name: 'main', send_from: window.location.href}));
+            //socket.send(JSON.stringify({ request: 'get_chat_history' , name: 'main', send_from: window.location.href}));
         });
 
 
@@ -128,11 +128,12 @@ sidebar.style.display = 'block';
                     messageInput.removeAttribute('disabled');
                     sendButton.removeAttribute('disabled');
                     isSpecial = banned_names.includes(username);
+                    socket.send(JSON.stringify({ request: 'get_chat_history' , name: 'main', send_from: window.location.href}));
 
                   } else {
                     if (data.ResponseCode === 'fail')
                     alert('wrong username or password!');
-                    alert("this may be due to the fact that i replaced all of the spaces in your name with '_' in order for the thing not to break");
+                    
                   };
                 } else {
                   if (data.request === 'create-response') {

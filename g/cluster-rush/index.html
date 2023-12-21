@@ -11,6 +11,7 @@
   </head>
   <body>
     <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="100%" width="100%"></canvas>
+    <button onclick="openFullscreen()">Fullscreen</button>
     <script type="text/javascript">
       var Module = {
         TOTAL_MEMORY: 268435456,
@@ -24,6 +25,20 @@
         memUrl: "Release/NG.mem",
       };
       console.log("If the file NG.mem returns a 404 error, that is ok!")
+    </script>
+    <script>
+       <script>
+  var elem = document.getElementById("canvas");
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  }
+  </script>
     </script>
     <script src="Release/UnityLoader.js"></script>
     <script src="/js/main.js"></script>

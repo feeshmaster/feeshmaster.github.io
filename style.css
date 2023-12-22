@@ -1,17 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-body, ul, li {
+html {
+    background-color: #666;
+}
+
+body,
+ul,
+li {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 .title-text {
-  text-align: center;
+    text-align: center;
+}
+
+.sub-heading {
+    text-align: center;
 }
 
 .top-menu {
     list-style-type: none;
     background-color: #333;
     text-align: center;
-    padding: 10px 0;
+    padding: 1%;
 }
 
 .top-menu li {
@@ -37,77 +49,54 @@ body, ul, li {
     transition-duration: 1s;
 }
 
-
-
-
 .game-button {
-    margin: 1px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border-color: red;
+    flex-basis: 15%;
+    display: inline-flex;
+    justify-content: center;
 }
 
-
 .button-img {
-  border-radius: 25%;
-  height:150px;
-  width:150px;
+    border-radius: 25%;
+    height: 150px;
+    width: 150px;
+    transition-duration: 0.5s;
 }
 
 .button-img:hover {
-  border-radius: 15%;
-  transition-property: border-radius;
-  transition-duration: 0.5s;
+    border-radius: 15%;
+    transition-property: border-radius;
 }
-.scrolling-content::before {
-    content: "";
-    display: block;
-    height: 0;
-    width: 100%;
-}
-
-
 .scrolling-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px auto 0 auto; 
-}
-
-.game-button {
-    margin: 1%;
-    width: calc(16.66% - 1.33%); /* 16.66% allows for 6 buttons per row with some margin - note to self*/
-    border-radius: 50%;
-}
-
-html {
-  background-color: #666;
+    margin: 20px auto 0 auto;
 }
 
 #SearchContainer {
-  text-align: center;
+    text-align: center;
 }
 
 #Search {
-  color: grey;
-  border-color: red;
-  height: 25px;
-  width: 350px;
-  border-radius: 0px;
-  background-color: #282928;
-  transition-property: background-color, border-radius;
-  transition-duration: 0.5s;
+    color: grey;
+    border-color: red;
+    height: 25px;
+    width: 350px;
+    border-radius: 0px;
+    background-color: #282928;
+    transition-property: background-color, border-radius;
+    padding-left: 10px;
+    transition-duration: 0.5s;
 }
 
-
 #Search:hover {
-  border-radius: 25px;
-  color: red;
-  background-color: #3d3d3d;
-  transition-property: border-radius, background-color;
-  transition-duration: 0.5s;
+    border-radius: 25px;
+    color: red;
+    background-color: #3d3d3d;
+    transition-property: border-radius, background-color;
+    transition-duration: 0.5s;
+}
 
-
-
+#Search:focus {
+    outline: none;
 }

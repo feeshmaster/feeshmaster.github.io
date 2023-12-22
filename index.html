@@ -1,498 +1,932 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="this is a game website with various games and a really cool chatroom">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Feeshmasters game website</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="top-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu-items/about.html">About</a></li>
-                <li><a href="menu-items/news.html">News</a></li>
-                <li><a href="menu-items/issues.html">Issues</a></li>
-                <li><a href="menu-items/request.html">Request</a></li>
-            </ul>
-        </nav>
-      <h1 class="title-text">Feeshmasters Game Website</h1><br>
-      <h2>keep in mind that this website is Work In Progress and will be updated often if other people use it :)(will be at least 50 games)</h2>
-        <div id="SearchContainer">
-  <input id="Search", placeholder="search..."></input>
-</div>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="this is a game website with various games and a really cool chatroom"
+        />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Feeshmasters game website</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="top-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu-items/about.html">About</a></li>
+                    <li><a href="menu-items/news.html">News</a></li>
+                    <li><a href="menu-items/issues.html">Issues</a></li>
+                    <li><a href="menu-items/request.html">Request</a></li>
+                </ul>
+            </nav>
+            <h1 class="title-text">Feeshmasters Game Website</h1>
+            <br />
+            <h2>
+                keep in mind that this website is Work In Progress and will be
+                updated often if other people use it :)(will be at least 50
+                games)
+            </h2>
+            <div id="SearchContainer">
+                <input id="Search" , placeholder="search..." />
+            </div>
+        </header>
 
-    <main>
-        <p id="result-text", style="text-align:center;"></p>
-        <div class="scrolling-content">
+        <main>
+            <p id="result-text" , style="text-align: center"></p>
+            <div class="scrolling-content">
+                <div class="game-button" , id="chatroom">
+                    <a href="g/chatroom/public/index.html">
+                        <img
+                            src="Assets/Chatroom.jpeg"
+                            alt="chatroom"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="getting over it">
+                    <a href="g/Getting Over It v1/index.html">
+                        <img
+                            src="Assets/getting over it.jpeg"
+                            alt="getting over it"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="the shadow reform">
+                    <a href="g/The Shadow Reform/index.html">
+                        <img
+                            src="Assets/the shadow reform.png"
+                            alt="the shadow reform"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="nitro racing">
+                    <a href="g/Nitro Racing/index.html">
+                        <img
+                            src="Assets/nitro-racing.jpeg"
+                            alt="nitro racing"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="level eaten">
+                    <a href="g/Level EATEN! - v0/index.html">
+                        <img
+                            src="Assets/level eaten.jpeg"
+                            alt="level eaten"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="paper minecraft v11">
+                    <a href="g/Paper Minecraft v11/index.html">
+                        <img
+                            src="Assets/paper minecraft.jpeg"
+                            alt="paper minecraft v11"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="grey box">
+                    <a href="g/greybox/index.html">
+                        <img
+                            src="Assets/grey box.jpeg"
+                            alt="grey box"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="menja">
+                    <a href="g/menja">
+                        <img
+                            src="Assets/menja.png"
+                            alt="menja"
+                            ,
+                            style="
+                                height: 150px;
+                                width: 150px;
+                                border-radius: 25%;
+                            "
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="hacker type">
+                    <a href="g/hackertype/index.html">
+                        <img
+                            src="Assets/hacker type.png"
+                            alt="hacker type"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="learn to fly">
+                    <a href="g/ruffle/index.html?swf=learntofly.swf">
+                        <img
+                            src="Assets/lrn.jpeg"
+                            alt="learn to fly"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="learn to fly 2">
+                    <a href="g/ruffle/index.html?swf=learntofly2.swf">
+                        <img
+                            src="Assets/lrn2.jpeg"
+                            alt="learn to fly 2"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="learn to fly 3">
+                    <a href="g/ruffle/index.html?swf=learntofly3.swf">
+                        <img
+                            src="Assets/lrn3.jpeg"
+                            alt="learn to fly 3"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="tanuki sunset">
+                    <a href="g/tanuki-sunset/index.html">
+                        <img
+                            src="Assets/tanuki sunset.jpeg"
+                            alt="tanuki sunset"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="monster tracks">
+                    <a href="g/car-game/game.html">
+                        <img
+                            src="Assets/Car-game.jpeg"
+                            alt="car-game"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="five nights at winstons">
+                    <a href="g/fnaw">
+                        <img
+                            src="Assets/fnaw.jpg"
+                            alt="Five Nights at winstons"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="2048">
+                    <a href="g/2048">
+                        <img
+                            src="Assets/2048.png"
+                            alt="2048"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="flappybird">
+                    <a href="g/flappybird">
+                        <img
+                            src="Assets/flappy.jpeg"
+                            alt="flappy"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="eaglercraft">
+                    <a href="g/eagler">
+                        <img
+                            src="Assets/minecraft.jpeg"
+                            alt="eaglercraft"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="cookie clicker">
+                    <a href="g/cookie-clicker/index.html">
+                        <img
+                            src="Assets/cookie clicker.jpeg"
+                            alt="cookie clicker"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="chess">
+                    <a href="g/chess">
+                        <img
+                            src="Assets/chess.png"
+                            alt="chess"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="chrome dino">
+                    <a href="g/chromedino">
+                        <img
+                            src="Assets/dino.png"
+                            alt="dino"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="yohoho">
+                    <a href="g/yohoho/index.html">
+                        <img
+                            src="Assets/yohoho.jpeg"
+                            alt="yohoho"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="worlds hardest game 2">
+                    <a href="g/worlds-hardest-game-2/index.html">
+                        <img
+                            src="Assets/worlds hardest 2.png"
+                            alt="worlds hardest game 2"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="wordle">
+                    <a href="g/wordle/index.html">
+                        <img
+                            src="Assets/wordle.png"
+                            alt="wordle"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="webretro">
+                    <a href="g/webretro/index.html">
+                        <img
+                            src="Assets/webretro.png"
+                            alt="webretro"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="vex7">
+                    <a href="g/vex7/index.html">
+                        <img
+                            src="Assets/vex7.jpeg"
+                            alt="vex7"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="vex6">
+                    <a href="g/vex6/index.html">
+                        <img
+                            src="Assets/vex6.jpeg"
+                            alt="vex6"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="vex5">
+                    <a href="g/vex5/index.html">
+                        <img
+                            src="Assets/vex5.jpeg"
+                            alt="vex5"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="vex4">
+                    <a href="g/vex4/index.html">
+                        <img
+                            src="Assets/vex4.jpeg"
+                            alt="vex4"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="vex3">
+                    <a href="g/vex3/index.html">
+                        <img
+                            src="Assets/vex3.jpeg"
+                            alt="vex3"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="tiny fishing">
+                    <a href="g/tiny-fishing/index.html">
+                        <img
+                            src="Assets/tny fishing.jpeg"
+                            alt="tiny fishing"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="starve.io">
+                    <a href="g/surviv/index.html">
+                        <img
+                            src="Assets/srviv io.png"
+                            alt="surviv.io"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="subway surfers san francisco">
+                    <a href="g/subway-surfers-ny/index.html">
+                        <img
+                            src="Assets/subway.jpeg"
+                            alt="subway-surfers sf"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="stickman hook">
+                    <a href="g/Stickmanhook/index.html">
+                        <img
+                            src="Assets/stickamnhook.jpeg"
+                            alt="stickman hook"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="stack">
+                    <a href="g/stack/index.html">
+                        <img
+                            src="Assets/stack.jpeg"
+                            alt="stack"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="super mario 64">
+                    <a href="g/sm64/index.html">
+                        <img
+                            src="Assets/supr 64.jpeg"
+                            alt="super mario 64"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="slope ball">
+                    <a href="g/slope-ball/index.html">
+                        <img
+                            src="Assets/slope ball.png"
+                            alt="slope-ball"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="slope 2">
+                    <a href="g/slope-2/index.html">
+                        <img
+                            src="Assets/slope2.png"
+                            alt="slope-2"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/slope/index.html" , id="slope">
+                        <img
+                            src="Assets/slope.jpeg"
+                            alt="slope"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" style="display: none">
+                    <a href="g/sand-game/index.html" , id="sand game">
+                        <img
+                            src="Assets/sand game.jpeg"
+                            alt="=sand-game"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/retro-bowl/index.html" , id="retro bowl">
+                        <img
+                            src="Assets/retro bowl.png"
+                            alt="retro bowl"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="pixel gun survival">
+                    <a href="g/pixel-gun-survival/index.html">
+                        <img
+                            src="Assets/ps3d.jpeg"
+                            alt="pixel gun survival"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="paper.io 2">
+                    <a href="g/paperio2">
+                        <img
+                            src="Assets/paper 2.jpeg"
+                            alt="paperio 2"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="OVO">
+                    <a href="g/ovo/index.html">
+                        <img
+                            src="Assets/ovo.png"
+                            alt="ovo"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="motox3m2">
+                    <a href="g/motox3m2/index.html">
+                        <img
+                            src="Assets/moto.jpeg"
+                            alt="motox3m2"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="motox3m winter">
+                    <a href="g/motox3m-winter">
+                        <img
+                            src="Assets/moto winter.jpeg"
+                            alt="motox3m-winter"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="motox3m spooky">
+                    <a href="g/motox3m-spooky/index.html">
+                        <img
+                            src="Assets/moto spooky.jpeg"
+                            alt="motox3m-spooky"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="mario">
+                    <a href="g/mario/index.html">
+                        <img
+                            src="Assets/mario.jpeg"
+                            alt="mario"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="krunker.io">
+                    <a href="g/krunker/index.html">
+                        <img
+                            src="Assets/krunker.png"
+                            alt="krunker"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="just fall">
+                    <a href="g/just-fall/index.html">
+                        <img
+                            src="Assets/just fall.jpeg"
+                            alt="just-fall"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="impossible quiz">
+                    <a href="g/impossiblequiz/index.html">
+                        <img
+                            src="Assets/imp quiz.png"
+                            alt="impossible quiz"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="geometry dash">
+                    <a href="g/geodash/index.html">
+                        <img
+                            src="Assets/gd.jpeg"
+                            alt="GD(geometry dash)"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="fruit ninja">
+                    <a href="g/fruitninja/index.html">
+                        <img
+                            src="Assets/fruit ninja.jpeg"
+                            alt="fruit ninja"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="duck life 4">
+                    <a href="g/ducklife4/index.html">
+                        <img
+                            src="Assets/duck 4.jpeg"
+                            alt="ducklife 4"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="duck life 3">
+                    <a href="g/ducklife/index.html">
+                        <img
+                            src="Assets/duck 3.jpeg"
+                            alt="ducklife 3"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="duck life 2">
+                    <a href="g/ducklife2/index.html">
+                        <img
+                            src="Assets/duck 2.jpeg"
+                            alt="ducklife 2"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/ducklife1/index.html" , id="duck life 1">
+                        <img
+                            src="Assets/duck.jpeg"
+                            alt="ducklife 1"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/DriveMad//index.html" , id="drive mad">
+                        <img
+                            src="Assets/drive mad.jpeg"
+                            alt="drive mad"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/cubefield/index.html" , id="cube field">
+                        <img
+                            src="Assets/cube field.jpeg"
+                            alt="cube field"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/csgo-clicker/index.html" , id="csgo clicker">
+                        <img
+                            src="Assets/csg clicker.jpeg"
+                            alt="csgo clicker"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/CrossyRoad/index.html" , id="cross road">
+                        <img
+                            src="Assets/crs road.jpeg"
+                            alt="crossy road"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/cluster-rush" , id="cluster rush">
+                        <img
+                            src="Assets/cluster rush.jpeg"
+                            alt="cluster rush"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/cell-machine/index.html" , id="cell machine">
+                        <img
+                            src="Assets/cell machine.jpeg"
+                            alt="cell machine"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="big tower tiny square">
+                    <a href="g/btts/index.html">
+                        <img
+                            src="Assets/btts.jpeg"
+                            alt="big tower tiny square"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/bloxors/index.html" , id="bloxorz">
+                        <img
+                            src="Assets/bloxors.jpeg"
+                            alt="bloxors"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="bloons tower defense 2">
+                    <a href="g/bloonstd2">
+                        <img
+                            src="Assets/btd2.jpeg"
+                            alt="bloons td 2"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/Bitlife/index.html" , id="bitlife">
+                        <img
+                            src="Assets/bitlife.jpeg"
+                            alt="bit life"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="basket bros io">
+                    <a href="g/basketbros-io">
+                        <img
+                            src="Assets/basket bros.jpeg"
+                            alt="basket bros"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="basketball stars">
+                    <a href="g/basketball-stars">
+                        <img
+                            src="Assets/basket stars.jpeg"
+                            alt="basket ball stars"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="the backrooms">
+                    <a href="g/backrooms/index.html">
+                        <img
+                            src="Assets/backrooms.jpeg"
+                            alt="backrooms"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="awesome tanks 2">
+                    <a href="g/awesometanks2/index.html">
+                        <img
+                            src="Assets/aws 2.jpeg"
+                            alt="awesome tanks 2"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="among us">
+                    <a href="g/among-us/index.html">
+                        <img
+                            src="Assets/among us.jpeg"
+                            alt="among us"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="ages of conflict">
+                    <a href="g/ages-of-conflict/index.html">
+                        <img
+                            src="Assets/ages of conflict.jpeg"
+                            alt="ages of conflict"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button">
+                    <a href="g/1v1lol/index.html" , id="1v1 lol">
+                        <img
+                            src="Assets/1v1 lol.jpeg"
+                            alt="1v1 lol"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="acheivement unlocked">
+                    <a href="g/achievementunlocked/index.html">
+                        <img
+                            src="Assets/achievment.png"
+                            alt="acheivement unlocked"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="acheivement unlocked 2">
+                    <a href="g/ruffle/index.html?swf=achievementunlocked2.swf">
+                        <img
+                            src="Assets/achievementunlocked2.png"
+                            alt="acheivement unlocked 2"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="fire boy and water girl">
+                    <a href="g/ruffle/index.html?swf=fireboyandwatergirl.swf">
+                        <img
+                            src="Assets/fireboyandwatergirl.jpeg"
+                            alt="fire boy and water girl"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="core ball">
+                    <a href="g/core-ball/index.html">
+                        <img
+                            src="Assets/core ball.png"
+                            alt="core ball"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="doge miner tycoon">
+                    <a href="g/DogeMiner/index.html">
+                        <img
+                            src="Assets/doge miner.png"
+                            alt="doge miner"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="minesweepers">
+                    <a href="g/minesweeper/index.html">
+                        <img
+                            src="Assets/minesweeper.png"
+                            alt="minesweepers"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="missiles">
+                    <a href="g/missiles/index.html">
+                        <img
+                            src="Assets/missiles.png"
+                            alt="missiles"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="piano tiles">
+                    <a href="g/piano tiles/index.html">
+                        <img
+                            src="Assets/piano tiles.jpeg"
+                            alt="piano tiles"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="soundboard">
+                    <a href="g/soundboard/index.html">
+                        <img
+                            src="Assets/soundboard.png"
+                            alt="soundboard"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="spinning rat">
+                    <a href="g/spinningrat/index.html">
+                        <img
+                            src="Assets/spinningrat.png"
+                            alt="spinning rat"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="10 minutes till dawn">
+                    <a href="g/10-minutes-till-dawn/index.html">
+                        <img
+                            src="Assets/10 minutes til dawn.png"
+                            alt="10 minutes till dawn"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
+                <div class="game-button" , id="unfair mario">
+                    <a href="g/ruffle/index.html?swf=unfairmario.swf">
+                        <img
+                            src="Assets/unfair mario.jpeg"
+                            alt="unfair mario"
+                            ,
+                            class="button-img"
+                        />
+                    </a>
+                </div>
 
-            <div class="game-button", id="chatroom">
-                <a href="g/chatroom/public/index.html">
-                    <img src="Assets/Chatroom.jpeg" alt="chatroom", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="getting over it">
-                <a href="g/Getting Over It v1/index.html">
-                    <img src="Assets/getting over it.jpeg" alt="getting over it", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="the shadow reform">
-                <a href="g/The Shadow Reform/index.html">
-                    <img src="Assets/the shadow reform.png" alt="the shadow reform", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="nitro racing">
-                <a href="g/Nitro Racing/index.html">
-                    <img src="Assets/nitro-racing.jpeg" alt="nitro racing", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="level eaten">
-                <a href="g/Level EATEN! - v0/index.html">
-                    <img src="Assets/level eaten.jpeg" alt="level eaten", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="paper minecraft v11">
-                <a href="g/Paper Minecraft v11/index.html">
-                    <img src="Assets/paper minecraft.jpeg" alt="paper minecraft v11", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="grey box">
-                <a href="g/greybox/index.html">
-                    <img src="Assets/grey box.jpeg" alt="grey box", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="menja">
-                <a href="g/menja">
-                    <img src="Assets/menja.png" alt="menja", style="height:150px;width:150px;border-radius: 25%;">
-                </a>
-            </div>
-            <div class="game-button", id="hacker type">
-                <a href="g/hackertype/index.html">
-                    <img src="Assets/hacker type.png" alt="hacker type", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="learn to fly">
-                <a href="g/ruffle/index.html?swf=learntofly.swf">
-                    <img src="Assets/lrn.jpeg" alt="learn to fly", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="learn to fly 2">
-                <a href="g/ruffle/index.html?swf=learntofly2.swf">
-                    <img src="Assets/lrn2.jpeg" alt="learn to fly 2", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="learn to fly 3">
-                <a href="g/ruffle/index.html?swf=learntofly3.swf">
-                    <img src="Assets/lrn3.jpeg" alt="learn to fly 3", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="tanuki sunset">
-                <a href="g/tanuki-sunset/index.html">
-                    <img src="Assets/tanuki sunset.jpeg" alt="tanuki sunset", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="monster tracks">
-                <a href="g/car-game/game.html">
-                    <img src="Assets/Car-game.jpeg" alt="car-game", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="five nights at winstons">
-                <a href="g/fnaw">
-                    <img src="Assets/fnaw.jpg" alt="Five Nights at winstons", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="2048">
-                <a href="g/2048">
-                    <img src="Assets/2048.png" alt="2048", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="flappybird">
-                <a href="g/flappybird">
-                    <img src="Assets/flappy.jpeg" alt="flappy", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="eaglercraft">
-                <a href="g/eagler">
-                    <img src="Assets/minecraft.jpeg" alt="eaglercraft", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="cookie clicker">
-                <a href="g/cookie-clicker/index.html">
-                    <img src="Assets/cookie clicker.jpeg" alt="cookie clicker", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="chess">
-                <a href="g/chess">
-                    <img src="Assets/chess.png" alt="chess", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="chrome dino">
-                <a href="g/chromedino">
-                    <img src="Assets/dino.png" alt="dino", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="yohoho">
-                <a href="g/yohoho/index.html">
-                    <img src="Assets/yohoho.jpeg" alt="yohoho", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="worlds hardest game 2">
-                <a href="g/worlds-hardest-game-2/index.html">
-                    <img src="Assets/worlds hardest 2.png" alt="worlds hardest game 2", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="wordle">
-                <a href="g/wordle/index.html">
-                    <img src="Assets/wordle.png" alt="wordle", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="webretro">
-                <a href="g/webretro/index.html">
-                    <img src="Assets/webretro.png" alt="webretro", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="vex7">
-                <a href="g/vex7/index.html">
-                    <img src="Assets/vex7.jpeg" alt="vex7", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="vex6">
-                <a href="g/vex6/index.html">
-                    <img src="Assets/vex6.jpeg" alt="vex6", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="vex5">
-                <a href="g/vex5/index.html">
-                    <img src="Assets/vex5.jpeg" alt="vex5", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="vex4">
-                <a href="g/vex4/index.html">
-                    <img src="Assets/vex4.jpeg" alt="vex4", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="vex3">
-                <a href="g/vex3/index.html">
-                    <img src="Assets/vex3.jpeg" alt="vex3", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="tiny fishing">
-                <a href="g/tiny-fishing/index.html">
-                    <img src="Assets/tny fishing.jpeg" alt="tiny fishing", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="starve.io">
-                <a href="g/surviv/index.html">
-                    <img src="Assets/srviv io.png" alt="surviv.io", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="subway surfers san francisco">
-                <a href="g/subway-surfers-ny/index.html">
-                    <img src="Assets/subway.jpeg" alt="subway-surfers sf", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="stickman hook">
-                <a href="g/Stickmanhook/index.html">
-                    <img src="Assets/stickamnhook.jpeg" alt="stickman hook", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="stack">
-                <a href="g/stack/index.html">
-                    <img src="Assets/stack.jpeg" alt="stack", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="super mario 64">
-                <a href="g/sm64/index.html">
-                    <img src="Assets/supr 64.jpeg" alt="super mario 64", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="slope ball">
-                <a href="g/slope-ball/index.html">
-                    <img src="Assets/slope ball.png" alt="slope-ball", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="slope 2">
-                <a href="g/slope-2/index.html">
-                    <img src="Assets/slope2.png" alt="slope-2", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/slope/index.html", id="slope">
-                    <img src="Assets/slope.jpeg" alt="slope", class="button-img">
-                </a>
-            </div>
-            <div class="game-button" style="display:none">
-                <a href="g/sand-game/index.html", id="sand game">
-                    <img src="Assets/sand game.jpeg" alt="=sand-game", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/retro-bowl/index.html", id="retro bowl">
-                    <img src="Assets/retro bowl.png" alt="retro bowl", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="pixel gun survival">
-                <a href="g/pixel-gun-survival/index.html">
-                    <img src="Assets/ps3d.jpeg" alt="pixel gun survival", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="paper.io 2">
-                <a href="g/paperio2">
-                    <img src="Assets/paper 2.jpeg" alt="paperio 2", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="OVO">
-                <a href="g/ovo/index.html">
-                    <img src="Assets/ovo.png" alt="ovo", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="motox3m2">
-                <a href="g/motox3m2/index.html">
-                    <img src="Assets/moto.jpeg" alt="motox3m2", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="motox3m winter">
-                <a href="g/motox3m-winter">
-                    <img src="Assets/moto winter.jpeg" alt="motox3m-winter", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="motox3m spooky">
-                <a href="g/motox3m-spooky/index.html">
-                    <img src="Assets/moto spooky.jpeg" alt="motox3m-spooky", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="mario">
-                <a href="g/mario/index.html">
-                    <img src="Assets/mario.jpeg" alt="mario", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="krunker.io">
-                <a href="g/krunker/index.html">
-                    <img src="Assets/krunker.png" alt="krunker",  class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="just fall">
-                <a href="g/just-fall/index.html">
-                    <img src="Assets/just fall.jpeg" alt="just-fall", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="impossible quiz">
-                <a href="g/impossiblequiz/index.html">
-                    <img src="Assets/imp quiz.png" alt="impossible quiz", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="geometry dash">
-                <a href="g/geodash/index.html">
-                    <img src="Assets/gd.jpeg" alt="GD(geometry dash)", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="fruit ninja">
-                <a href="g/fruitninja/index.html">
-                    <img src="Assets/fruit ninja.jpeg" alt="fruit ninja", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="duck life 4">
-                <a href="g/ducklife4/index.html">
-                    <img src="Assets/duck 4.jpeg" alt="ducklife 4", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="duck life 3">
-                <a href="g/ducklife/index.html">
-                    <img src="Assets/duck 3.jpeg" alt="ducklife 3", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="duck life 2">
-                <a href="g/ducklife2/index.html">
-                    <img src="Assets/duck 2.jpeg" alt="ducklife 2", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/ducklife1/index.html", id="duck life 1">
-                    <img src="Assets/duck.jpeg" alt="ducklife 1", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/DriveMad//index.html", id="drive mad">
-                    <img src="Assets/drive mad.jpeg" alt="drive mad", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/cubefield/index.html", id="cube field">
-                    <img src="Assets/cube field.jpeg" alt="cube field", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/csgo-clicker/index.html", id="csgo clicker">
-                    <img src="Assets/csg clicker.jpeg" alt="csgo clicker", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/CrossyRoad/index.html", id="cross road">
-                    <img src="Assets/crs road.jpeg" alt="crossy road", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/cluster-rush", id="cluster rush">
-                    <img src="Assets/cluster rush.jpeg" alt="cluster rush", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/cell-machine/index.html", id="cell machine">
-                    <img src="Assets/cell machine.jpeg" alt="cell machine", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="big tower tiny square">
-                <a href="g/btts/index.html">
-                    <img src="Assets/btts.jpeg" alt="big tower tiny square", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/bloxors/index.html", id="bloxorz">
-                    <img src="Assets/bloxors.jpeg" alt="bloxors", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="bloons tower defense 2">
-                <a href="g/bloonstd2">
-                    <img src="Assets/btd2.jpeg" alt="bloons td 2", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/Bitlife/index.html", id="bitlife">
-                    <img src="Assets/bitlife.jpeg" alt="bit life", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="basket bros io">
-                <a href="g/basketbros-io">
-                    <img src="Assets/basket bros.jpeg" alt="basket bros", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="basketball stars">
-                <a href="g/basketball-stars">
-                    <img src="Assets/basket stars.jpeg" alt="basket ball stars", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="the backrooms">
-                <a href="g/backrooms/index.html">
-                    <img src="Assets/backrooms.jpeg" alt="backrooms", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="awesome tanks 2">
-                <a href="g/awesometanks2/index.html">
-                    <img src="Assets/aws 2.jpeg" alt="awesome tanks 2", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="among us">
-                <a href="g/among-us/index.html">
-                    <img src="Assets/among us.jpeg" alt="among us", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="ages of conflict">
-                <a href="g/ages-of-conflict/index.html">
-                    <img src="Assets/ages of conflict.jpeg" alt="ages of conflict", class="button-img">
-                </a>
-            </div>
-            <div class="game-button">
-                <a href="g/1v1lol/index.html", id="1v1 lol">
-                    <img src="Assets/1v1 lol.jpeg" alt="1v1 lol", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="acheivement unlocked">
-                <a href="g/achievementunlocked/index.html">
-                    <img src="Assets/achievment.png" alt="acheivement unlocked", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="acheivement unlocked 2">
-                <a href="g/ruffle/index.html?swf=achievementunlocked2.swf">
-                    <img src="Assets/achievementunlocked2.png" alt="acheivement unlocked 2", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="fire boy and water girl">
-                <a href="g/ruffle/index.html?swf=fireboyandwatergirl.swf">
-                    <img src="Assets/fireboyandwatergirl.jpeg" alt="fire boy and water girl", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="core ball">
-                <a href="g/core-ball/index.html">
-                    <img src="Assets/core ball.png" alt="core ball", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="doge miner tycoon">
-                <a href="g/DogeMiner/index.html">
-                    <img src="Assets/doge miner.png" alt="doge miner", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="minesweepers">
-                <a href="g/minesweeper/index.html">
-                    <img src="Assets/minesweeper.png" alt="minesweepers", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="missiles">
-                <a href="g/missiles/index.html">
-                    <img src="Assets/missiles.png" alt="missiles", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="piano tiles">
-                <a href="g/piano tiles/index.html">
-                    <img src="Assets/piano tiles.jpeg" alt="piano tiles", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="soundboard">
-                <a href="g/soundboard/index.html">
-                    <img src="Assets/soundboard.png" alt="soundboard", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="spinning rat">
-                <a href="g/spinningrat/index.html">
-                    <img src="Assets/spinningrat.png" alt="spinning rat", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="10 minutes till dawn">
-                <a href="g/10-minutes-till-dawn/index.html">
-                    <img src="Assets/10 minutes til dawn.png" alt="10 minutes till dawn", class="button-img">
-                </a>
-            </div>
-            <div class="game-button", id="unfair mario">
-                <a href="g/ruffle/index.html?swf=unfairmario.swf">
-                    <img src="Assets/unfair mario.jpeg" alt="unfair mario", class="button-img">
-                </a>
-            </div>
+                <script>
+                    const SearchBar = document.getElementById("Search");
 
-
-            <script>
-                const SearchBar = document.getElementById("Search");
-
-  SearchBar.addEventListener("input", event => { 
-        let input = SearchBar.value; 
-        input= input.toLowerCase(); 
-        let x = document.getElementsByClassName('game-button'); 
-        var num = 0;
-        for (i = 0; i < x.length; i++) {  
-            if (!x[i].id.toLowerCase().includes(input)) { 
-                x[i].style.display="none"; 
-            } 
-            else { 
-                x[i].style.display="inline-block";  
-                num += 1;
-            } 
-        }
-        if (num == 0) {
-      document.getElementById("result-text").innerHTML = `no results found for "${input}"!`;
-    } else {
-      document.getElementById("result-text").innerHTML = ""
-        }
-
-  });
-            </script>
-
-
-
-
-
-
-        </div>
-    </main>
-</body>
-                        </html>
+                    SearchBar.addEventListener("input", (event) => {
+                        let input = SearchBar.value;
+                        input = input.toLowerCase();
+                        let x = document.getElementsByClassName("game-button");
+                        var num = 0;
+                        for (i = 0; i < x.length; i++) {
+                            if (!x[i].id.toLowerCase().includes(input)) {
+                                x[i].style.display = "none";
+                            } else {
+                                x[i].style.display = "inline-flex";
+                                num += 1;
+                            }
+                        }
+                        if (num == 0) {
+                            document.getElementById("result-text").innerHTML =
+                                `no results found for "${input}"!`;
+                        } else {
+                            document.getElementById("result-text").innerHTML =
+                                "";
+                        }
+                    });
+                </script>
+            </div>
+        </main>
+    </body>
+</html>
